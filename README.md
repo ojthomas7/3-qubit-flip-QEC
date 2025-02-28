@@ -1,4 +1,4 @@
-# The Three Qubit Repetition Code
+# The Three Qubit Repetition Code for Bit-flip Errors
 
 ## Overview
 
