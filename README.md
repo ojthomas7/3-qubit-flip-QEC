@@ -44,5 +44,5 @@ We perform an error-detection via syndrom diagnosis, by interacting our state $|
   <img src="3qubitcircuit.jpeg" alt="Image 1" width="600"/>
 </p>
 <p align = "center">
-<i>The three qubit repetition circuit for bit-flip errors. We can see that after our encoding, we enforce a bit flip on the first qubit to simulat a bit flip error. We then see that using our ancilla qubits, we read the syndrom as $| 1 0 \rangle$, and hence deduce that the first bit has been fipped.</i>
+<i>The three qubit repetition circuit for bit-flip errors. We can see that after our encoding, we enforce a bit flip on the first qubit to simulat a bit flip error. We then see that using our ancilla qubits, we read the syndrome as $1, 0$, and hence deduce that the first bit has been fipped.</i>
 </p> 
