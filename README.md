@@ -4,11 +4,11 @@
 
 Quantum information stored as a qubit is inherently unstable, and prone to error. The key idea behind quantum error correction (QEC) is that we may encode information to protect it from noise, allowing us to detect when an error has occured (in this context an unintentional bit-flip) and allowing us to decode this error to retrieve our initial state.
 
-## The classical error correction
+## Classical Error Correction
 
 One way of preventing this kind of error within classical communication channels is via repetition code. Say we are sending a bit with the value $1$: we simply replicate this, such that $1 \to 111$, and send this information through our system. The effect of noise within our system is to flip a bit, and this error occurs with probability $p$. It is therefore clear why repetition of the same bit reduces our uncertainty when an error occurs. Suppose the signal $110$ was recieved at the other end of our communication channel - we can deduce with high certainty that the information that was originally sent was in the form $111$, and hence we can re-translate (decode) the information $111 \to 1$.
 
-## Quantum error correction
+## Quantum Error Correction
 
 This procedure is not quite as simple in quantum systems, for a few reasons:
 
