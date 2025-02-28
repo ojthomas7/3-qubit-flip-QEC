@@ -38,4 +38,3 @@ We perform an error-detection via syndrom diagnosis, by interacting our state $|
 | 0  |  1  | Third qubit flip  |
 | 1  |  0  | First qubit flip  |
 | 1  |  1  | Second Qubit flip  |
- ok
