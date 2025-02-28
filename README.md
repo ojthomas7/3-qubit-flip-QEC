@@ -8,13 +8,6 @@ Quantum information stored as a qubit is inherently unstable, and prone to error
 
 One way of preventing this kind of error within classical communication channels is via repetition code. Say we are sending a bit with the value $1$: we simply replicate this, such that $1 \to 111$, and send this information through our system. The effect of noise within our system is to flip a bit, and this error occurs with probability $p$. It is therefore clear why repetition of the same bit reduces our uncertainty when an error occurs. Suppose the signal $110$ was recieved at the other end of our communication channel - we can deduce with high certainty that the information that was originally sent was in the form $111$, and hence we can re-translate (decode) the information $111 \to 1$.
 
-<p align="center">
-  <img src="deutch.jpeg" alt="Image 1" width="600"/>
-</p>
-<p align = "center">
-<i>Circuit implementing Deutch's algorithm from Nielsen and Chuangs 'Quantum Computation and Quantum Information'</i>
-</p> 
-
 ## Quantum error correction
 
 This procedure is not quite as simple in quantum systems, for a few reasons:
@@ -25,6 +18,13 @@ This procedure is not quite as simple in quantum systems, for a few reasons:
 
 ## The Solution
 
-Fortunatelt, there are ways we can work around these rpoblems.
+Fortunately, there are ways we can work around these problems.
 
-Consider the arbitrary qubit $| \Psi \rangle = \alpha |0 \rangle + \beta 1 \rangle$, which we are going to send through our system.
+Consider the arbitrary qubit $| \Psi \rangle = \alpha |0 \rangle + \beta |1 \rangle$, which we are going to send through our system. We can encode this into three qubits as $|\Psi_2 \rangle = \alpha |000 \rangle + \beta |111 \rangle$ in the following manner:
+
+<p align="center">
+  <img src="isometry.jpeg" alt="Image 1" width="600"/>
+</p>
+<p align = "center">
+<i>Quantum teleportation circuit, created with IBM composer and the Qiskit SDK. An arbitrary qubit interacts with an entangled Bell state via a CNOT followed by a Hadamard gate. Measurements are made of the arbitrary qubit and one half of the EPR pair, and the relavant transformations are made to the second half of the EPR pair depending on the results of this measurement.</i>
+</p> 
