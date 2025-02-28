@@ -27,3 +27,12 @@ Consider the arbitrary qubit $| \Psi \rangle = \alpha |0 \rangle + \beta |1 \ran
 </p>
 <p align = "center">
 </p> 
+
+Let some error occur after this encoding, in the form of an unexpected bit-flip of one of the three qubits. How might we detect wether an error has occured, which error has occured (if any), and how to decode the original information?
+
+We perform an error-detection via syndrom diagnosis, by interacting our state $|\Psi_2$ after the error with two ancilla qubits in the state $|0\rangle$. Two CNOT gates are applied to each ancilla: on the first, the control is set to our first and then second qubits, and on the second the control is set to our second and third. The results of the two CNOT gates give us $S_1$ and $S_2$, our syndrome diagnosis. Based on the reuslts of $S_1$ and $S_2$, we can say what error has occured within our system:
+
+| $S_1$  | $S_2$ |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
