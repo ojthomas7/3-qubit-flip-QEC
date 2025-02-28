@@ -32,7 +32,9 @@ Let some error occur after this encoding, in the form of an unexpected bit-flip 
 
 We perform an error-detection via syndrom diagnosis, by interacting our state $|\Psi_2$ after the error with two ancilla qubits in the state $|0\rangle$. Two CNOT gates are applied to each ancilla: on the first, the control is set to our first and then second qubits, and on the second the control is set to our second and third. The results of the two CNOT gates give us $S_1$ and $S_2$, our syndrome diagnosis. Based on the reuslts of $S_1$ and $S_2$, we can say what error has occured within our system:
 
-| $S_1$  | $S_2$ |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| $S_1$  | $S_2$ | Error |
+| ------------- | ------------- | ------------- |
+| 0  |  0  | No Error  |
+| 0  |  1  | Third qubit flip  |
+| 1  |  0  | First qubit flip  |
+| 1  |  1  | Second Qubit flip  |
