@@ -26,6 +26,7 @@ Consider the arbitrary qubit $| \Psi \rangle = \alpha |0 \rangle + \beta |1 \ran
   <img src="isometry.jpeg" alt="Image 1" width="400"/>
 </p>
 <p align = "center">
+  <i>The qubit is mapped from a 2-D Hilbert space to a restricted 8-D Hilbert space via two CNOT gates.</i>
 </p> 
 
 Let some error occur after this encoding, in the form of an unexpected bit-flip of one of the three qubits. How might we detect wether an error has occured, which error has occured (if any), and how to decode the original information?
