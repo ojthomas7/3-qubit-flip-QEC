@@ -23,8 +23,7 @@ Fortunately, there are ways we can work around these problems.
 Consider the arbitrary qubit $| \Psi \rangle = \alpha |0 \rangle + \beta |1 \rangle$, which we are going to send through our system. We can encode this into three qubits as $|\Psi_2 \rangle = \alpha |000 \rangle + \beta |111 \rangle$ in the following manner:
 
 <p align="center">
-  <img src="isometry.jpeg" alt="Image 1" width="600"/>
+  <img src="isometry.jpeg" alt="Image 1" width="400"/>
 </p>
 <p align = "center">
-<i>Quantum teleportation circuit, created with IBM composer and the Qiskit SDK. An arbitrary qubit interacts with an entangled Bell state via a CNOT followed by a Hadamard gate. Measurements are made of the arbitrary qubit and one half of the EPR pair, and the relavant transformations are made to the second half of the EPR pair depending on the results of this measurement.</i>
 </p> 
